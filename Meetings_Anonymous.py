@@ -1,15 +1,11 @@
 import tkinter as tk
-from tkinter import filedialog, messagebox, simpledialog, Toplevel
+from tkinter import filedialog, messagebox, Toplevel
 import json
-import uuid
 import pyperclip
 import os
-import spacy
-import os
-import sys
 import en_core_web_sm
 
-nlp = en_core_web_sm.load()
+spacy_nlp = en_core_web_sm.load()
 
 class MeetingSummarizerApp:
     def __init__(self, master):
